@@ -1,0 +1,188 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:300,700,300italic);
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+header {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	padding: 0px 100px;
+	background: #FDD451;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 999;
+}
+
+.row{
+	justify-content:center;
+}
+
+.logo {
+	color: black;
+	height: 50px;
+	cursor:pointer;
+	line-height: 50px;
+	font-size: 24px;
+	text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	float: left;
+	font-weight: bold;
+}
+
+header nav {
+	float: right;
+}
+
+	header nav ul {
+		margin: 0px;
+		padding: 0px;
+		display: flex;
+	}
+
+		header nav ul li {
+			list-style: none;
+		}
+
+			header nav ul li a {
+				text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+				height: 50px;
+				line-height: 50px;
+				padding: 0px 20px;
+				margin-left: 20px;
+				color: darkblue;
+				text-decoration: none;
+				display: block;
+			}
+
+				header nav ul li a:hover,
+				header nav ul li a.active {
+					color: #fff;
+					background: #2196f3;
+				}
+
+.menu-toggle {
+	color: #fff;
+	float: right;
+	line-height: 50px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+}
+
+@media (max-width:400px) {
+	.heading {
+		font-size: xx-large;
+	}
+}
+
+@media (max-width: 991px) {
+	header {
+		padding: 0px 20px;
+	}
+	.menu-toggle {
+		display: block;
+	}
+	#TextBox1{
+		width:200px;
+	}
+
+	header nav {
+		position: absolute;
+		width: 100%;
+		height: calc(100vh-50px);
+		background: #FDD451;
+		top: 50px;
+		left: -100%;
+		transition: 0.5s;
+	}
+
+		header nav.active {
+			left: 0px;
+		}
+
+		header nav ul {
+			display: block;
+			text-align: center;
+		}
+
+			header nav ul li a {
+				border-bottom: 1px solid rgba(0,0,0,.2);
+				margin-left: 0px;
+			}
+}
+
+.demo {
+	margin-top: 50px;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+	.sticky + .demo {
+		padding-top: 0px;
+	}
+	
+.heading {
+	text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	text-align: center;
+	font-size: xx-large;
+	font-weight:900;
+	color: #ffffff;
+	z-index:9999;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+		background: #555;
+	}
+#TextBox1{
+	height: 50px;
+	box-shadow: 0 4px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	margin-left:50px;
+}
+.combine{
+	display:flex;
+	justify-content:center;
+	overflow-x:hidden;
+}
+.para {
+	color: #232626;
+	font-weight: 600;
+	font-size: x-large;
+	font-family: cursive;
+}
+.rtext {
+	text-align: center;
+	color: black;
+	z-index: 9999;
+	font-size: larger;
+}
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

@@ -1,0 +1,140 @@
+﻿body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #f5f5f5
+}
+
+.hedding {
+    font-size: 20px;
+    color: #ab8181;
+}
+
+.main-section {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,5%);
+}
+
+.left-side-product-box img {
+    width: 100%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25), 10px 10px rgba(0,0,0,0.22);
+    border-radius:10px;
+}
+
+.left-side-product-box .sub-img img {
+    margin-top: 5px;
+    width: 83px;
+    height: 100px;
+}
+
+.right-side-pro-detail span {
+    font-size: 15px;
+}
+
+.right-side-pro-detail p {
+    font-size: 25px;
+    color: #a1a1a1;
+}
+
+.right-side-pro-detail .price-pro {
+    color: #E45641;
+}
+
+.right-side-pro-detail .tag-section {
+    font-size: 18px;
+    color: #5D4C46;
+}
+
+.pro-box-section .pro-box img {
+    width: 100%;
+    height: 200px;
+}
+
+@media (min-width:360px) and (max-width:640px) {
+    .pro-box-section .pro-box img {
+        height: auto;
+    }
+}
+img.course{
+    width:100%;
+    height:auto;
+}
+.trainers {
+    border: outset;
+    border-radius: 7px;
+    padding: 14px;
+    list-style: none;
+    border-color: #FDD567;
+    margin-top: 10px;
+    color: teal;
+    font-weight: 600;
+}
+
+.trainersf {
+    border: outset;
+    border-radius: 7px;
+    padding: 14px;
+    list-style: none;
+    border-color: #FDD567;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25), 10px 10px rgba(0,0,0,0.22);
+    margin-top: 10px;
+    color: teal;
+    font-weight: 600;
+}
+
+.nlabel{
+    color:white;
+    font-weight:700;
+    font-size:40px;
+    text-transform:uppercase;
+}
+.clabel{
+    color:white;
+    font-weight:600;
+    font-size:15px;
+    width:100%;
+}
+.slabel{
+    color:white;
+    font-size:14px;
+    margin-left:7px;
+    width:100%;
+}
+.image {
+    margin-top:10px;
+    border:2px solid white;
+    padding:10px;
+    background:#262626;
+}
+
+@media (max-width: 991px) {
+    #side {
+        margin-top:15px;
+    }
+    .clabel{
+        text-align:center;
+        margin-top:10px;
+    }
+    .slabel{
+        text-align:center;
+    }
+
+}
+
+#side{
+    display:flex;
+    justify-content:center;
+}
+
+#a{
+    border-right:2px solid white;
+}
+#b {
+    border-right: 2px solid white;
+}
+#c {
+    border-right: 2px solid white;
+}
+#d {
+    border-right: 2px solid white;
+}
